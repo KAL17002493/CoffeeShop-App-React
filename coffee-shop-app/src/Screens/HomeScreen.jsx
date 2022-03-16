@@ -3,7 +3,13 @@ import React from 'react'
 function HomeScreen() {
   return (
 
-    <h1>Home Screen</h1>
+    <div>
+
+      <h1>Home Screen</h1>  
+
+
+    </div>
+
   )
 }
 

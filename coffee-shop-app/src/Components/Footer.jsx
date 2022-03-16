@@ -1,10 +1,13 @@
 import React from 'react'
 
 function Footer() {
+
   return (
-    <div>
+
+    <div className="footer">
         <h1>This is the footer</h1>
     </div>
+
   )
 }
 
