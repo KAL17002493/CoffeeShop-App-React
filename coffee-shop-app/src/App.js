@@ -4,6 +4,8 @@ import './App.css';
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 
+import SideMenu from './Components/SideMenu';
+
 //import screens
 import HomeScreen from './Screens/HomeScreen';
 
@@ -16,6 +18,7 @@ function App() {
     <div>
 
       <Router>
+        <SideMenu/>
         <Header/>
           <Routes>
 
