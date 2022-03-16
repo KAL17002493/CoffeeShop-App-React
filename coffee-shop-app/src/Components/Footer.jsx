@@ -1,11 +1,12 @@
 import React from 'react'
+import "../index.css"
 
 function Footer() {
 
   return (
 
     <div className="footer">
-        <h1>This is the footer</h1>
+        <h5>This is the footer</h5>
     </div>
 
   )

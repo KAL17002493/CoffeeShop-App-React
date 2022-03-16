@@ -5,7 +5,7 @@ function HomeScreen() {
 
     <div>
 
-      <h1>Home Screen</h1>  
+      <h1 >Home Screen</h1>  
 
 
     </div>
