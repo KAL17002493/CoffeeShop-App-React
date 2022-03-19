@@ -9,7 +9,7 @@ function Header() {
 
 <Navbar bg="dark" variant="dark" expand={false}>
   <Container fluid>
-    <Navbar.Brand as={Link} to="/">The Cloakroom</Navbar.Brand>
+    <Navbar.Brand as={Link} to="/home">The Cloakroom</Navbar.Brand>
     <Navbar.Toggle aria-controls="offcanvasNavbar" />
     <Navbar.Offcanvas
       id="offcanvasNavbar"
@@ -26,7 +26,7 @@ function Header() {
           <Nav.Link as={Link} to="/history">History</Nav.Link>
           <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
           <Nav.Link as={Link} to="/reviews">Reviews</Nav.Link>
-          <Nav.Link as={Link} to="/register">Register</Nav.Link>
+          <Nav.Link as={Link} to="/login">Login</Nav.Link>
         </Nav>
       
       </Offcanvas.Body>
