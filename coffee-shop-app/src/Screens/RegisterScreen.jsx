@@ -34,7 +34,7 @@ function RegisterScreen() {
 
     return (
 
-        <div className="bg-banner">
+        <div className="bg-bannerSmall">
             <div className="backgroundColour-cover">
         <h1 className='py-3 text-center'></h1>
     
@@ -60,7 +60,7 @@ function RegisterScreen() {
                     <Form.Control type='password' placeholder='Password...' onChange={(e)=>SetPassword(e.target.value)} />
                 </Form.Group>
 
-                <Button varient='primary' className='w-100 mt-5' onClick={registerUser}>Sign Up</Button>
+                <Button variant="success" className='w-100 mt-3' onClick={registerUser}>Sign Up</Button>
             </Form>
         </FormContainer>
             </div>
