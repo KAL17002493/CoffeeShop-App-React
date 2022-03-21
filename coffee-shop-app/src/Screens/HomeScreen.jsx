@@ -25,6 +25,7 @@ function HomeScreen() {
               <img src={Award} alt="Award" width={100}/>
               <p>By making online orders you will earn loyalty points which can be used for discounts and even a free cup of coffee</p>
             </div>
+
         </div>
       </div>
     </div>

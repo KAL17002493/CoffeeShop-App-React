@@ -16,6 +16,11 @@ code {
   color: rgb(255, 255, 255);
 }
 
+h1{
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
 .largeMargin{
   margin-top: 130px;
 }
