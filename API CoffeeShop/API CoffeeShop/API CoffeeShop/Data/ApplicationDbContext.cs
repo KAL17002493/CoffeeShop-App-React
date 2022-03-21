@@ -9,8 +9,9 @@ namespace API_CoffeeShop.Data
         public class ApplicationDbContext : IdentityDbContext<IdentityUser>
         {
             public DbSet<UserModel> Users { get; set; }
+            public DbSet<ProductModel> Products { get; set; }
             //constructor that allows us to use the database
-            public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
             {
 
             }
