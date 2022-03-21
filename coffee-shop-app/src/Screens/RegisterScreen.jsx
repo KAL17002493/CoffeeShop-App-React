@@ -41,22 +41,22 @@ function RegisterScreen() {
         <FormContainer>
             <Form>
                 <Form.Group className='mb-3' controlId='fname'>
-                    <Form.Label>First Name</Form.Label>
+                    <Form.Label className="text-light">First Name</Form.Label>
                     <Form.Control type='string' placeholder='First Name...' onChange={(e)=>SetFirstName(e.target.value)} />
                 </Form.Group>
 
                 <Form.Group className='mb-3' controlId='lname'>
-                    <Form.Label>Last Name</Form.Label>
+                    <Form.Label className="text-light">Last Name</Form.Label>
                     <Form.Control type='String' placeholder='Last Name...' onChange={(e)=>SetLastName(e.target.value)} />
                 </Form.Group>
 
                 <Form.Group className='mt-5 mb-3' controlId='email'>
-                    <Form.Label>Email</Form.Label>
+                    <Form.Label className="text-light">Email</Form.Label>
                     <Form.Control type='email' placeholder='Email...' onChange={(e)=>SetEmail(e.target.value)} />
                 </Form.Group>
 
                 <Form.Group className='mb-3' controlId='password'>
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label className="text-light">Password</Form.Label>
                     <Form.Control type='password' placeholder='Password...' onChange={(e)=>SetPassword(e.target.value)} />
                 </Form.Group>
 

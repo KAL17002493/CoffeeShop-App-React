@@ -20,7 +20,7 @@ function HistoryScreen() {
     
     <div className="backgroundColour-2">
       <div className="customFont-1  mt-5 m-3">
-      <Container>
+      <Container className="text-center">
         <Row>
             <Col><img src={Building1} alt="Building1" width={130}/></Col>
             <Col><img src={Building2} alt="Building2" width={130}/></Col>

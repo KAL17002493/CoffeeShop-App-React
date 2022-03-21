@@ -12,12 +12,12 @@ return (
         <FormContainer>
           <Form>
             <Form.Group className='mt-5 mb-3' controlId='email'>
-            <Form.Label>Email</Form.Label>
+            <Form.Label className="text-light">Email</Form.Label>
             <Form.Control type='email' placeholder='Email...'/>
             </Form.Group>
 
             <Form.Group className='mb-3' controlId='password'>
-            <Form.Label>Password</Form.Label>
+            <Form.Label className="text-light">Password</Form.Label>
             <Form.Control type='email' placeholder='Email...'/>
             </Form.Group>
 
