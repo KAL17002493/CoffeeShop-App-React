@@ -21,6 +21,14 @@ h1{
   text-decoration: underline;
 }
 
+h4{
+  color: rgb(255, 255, 255);
+}
+
+.buttonWidth{
+  width: 90%;
+}
+
 .largeMargin{
   margin-top: 130px;
 }
@@ -87,6 +95,21 @@ h1{
 
   background-color: #403327;
   box-shadow: 0 -10px 30px -10px #1a140f;
+}
+
+.menuItem{
+  border-radius: 10%;
+  width: 120px;
+  height: 120px;
+  background: #E5B68C;
+
+  box-shadow: 0 0 10px #413C37;
+}
+
+.menuButton{
+  position: absolute;
+  bottom: 10%;
+  width: 90%;
 }
 
 

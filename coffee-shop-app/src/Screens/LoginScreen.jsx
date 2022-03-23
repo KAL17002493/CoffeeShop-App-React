@@ -18,7 +18,7 @@ return (
 
             <Form.Group className='mb-3' controlId='password'>
             <Form.Label className="text-light">Password</Form.Label>
-            <Form.Control type='email' placeholder='Email...'/>
+            <Form.Control type='email' placeholder='Password...'/>
             </Form.Group>
 
             <Button variant="success" className='w-100 mt-3'>Login</Button>

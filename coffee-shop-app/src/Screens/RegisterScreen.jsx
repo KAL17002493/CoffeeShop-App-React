@@ -13,7 +13,7 @@ function RegisterScreen() {
     {
         console.log('Button Clicked')
 
-        fetch('https://localhost:3000/api/auth/register', {
+        fetch('https://localhost:7123/api/auth/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
                 body: JSON.stringify({

@@ -14,6 +14,8 @@ import ReviewsScreen from './Screens/ReviewsScreen';
 import LoginScreen from './Screens/LoginScreen';
 import RegisterScreen from './Screens/RegisterScreen';
 
+import AccountScreen from './Screens/AccountScreen';
+
 //import routing for page navigation
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
@@ -35,6 +37,8 @@ function App() {
             <Route exact path="/reviews" element={<ReviewsScreen/>}/>
             <Route exact path="/login" element={<LoginScreen/>}/>
             <Route exact path="/register" element={<RegisterScreen/>}/>
+
+            <Route exact path="/user/account" element={<AccountScreen/>}/>
           </Routes>
 
       </Router>
