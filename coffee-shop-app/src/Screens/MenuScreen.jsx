@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Button,} from 'react-bootstrap'
+import { Container, Row, Col, Button} from 'react-bootstrap'
 import {Link } from "react-router-dom"
 import MenuDrinkImg from "../img/MenuDrinkImg.png"
 import MenuFoodImg from "../img/MenuFoodImg.png"
@@ -19,10 +19,13 @@ function MenuScreen() {
 
          <div class="form-outline text-center m-3 mt-5">
           <input type="search" id="form1" class="form-control" placeholder="Search Item" aria-label="Search" />
+          <div className="text-center mt-3">
+            <Button as={Link} to="/" variant="success" className="w-100">Check out</Button>
+          </div>
         </div>
-         <div className="text-center">
-          <Button as={Link} to="/" variant="success" className="w-100">Check out</Button>
-         </div>
+         
+          
+         
 
       </div>
 
@@ -32,12 +35,12 @@ function MenuScreen() {
             <Row>
             <h4 className="text-center mt-4 mb-4">Coffee</h4>
 
-                <Col><div className="text-center"><h5>Espresso</h5></div></Col>
-                <Col><div className="text-center"><h5>Cappucion</h5></div></Col>
-                <Col><div className="text-center"><h5>Latte</h5></div></Col>
-                <Col><div className="text-center"><h5>Americano</h5></div></Col>
-                <Col><div className="text-center"><h5>Mocchiato</h5></div></Col>
-                <Col><div className="text-center"><h5>Hot Chocolate</h5></div></Col>
+              <Row><Col><button type="button" class="btn btn-outline-warning w-100">Espresso</button></Col></Row>
+              <Row><Col><button type="button" class="btn btn-outline-warning w-100">Cappucion</button></Col></Row>
+              <Row><Col><button type="button" class="btn btn-outline-warning w-100">Latte</button></Col></Row>
+              <Row><Col><button type="button" class="btn btn-outline-warning w-100">Americano</button></Col></Row>
+              <Row><Col><button type="button" class="btn btn-outline-warning w-100">Mocchiato</button></Col></Row>
+              <Row><Col><button type="button" class="btn btn-outline-warning w-100">Hot Chocolate</button></Col></Row>
             </Row>
                 
             <Row className="mt-4">
