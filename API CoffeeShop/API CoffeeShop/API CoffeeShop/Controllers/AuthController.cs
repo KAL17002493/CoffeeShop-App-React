@@ -9,6 +9,8 @@ using System.Text;
 
 namespace API_CoffeeShop.Controllers
 {
+    [Route("api/auth")]
+    [ApiController]
     public class AuthController : ControllerBase
     {
         //bring in identity user management

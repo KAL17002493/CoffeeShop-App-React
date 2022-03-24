@@ -6,7 +6,7 @@ function AccountScreen() {
   return (
     <div className="bg-bannerSmall">
         <div className="backgroundColour-1">
-            <h1 className='py-3 text-center'>Account</h1>
+            <h1 className='py-3 text-center'>Hello {window.localStorage.getItem("name")}</h1>
 
             <div className="text-center mt-5 mb-5">
                 <Button as={Link} to="/" variant="success" className="buttonWidth mt-3">Get a Reward--</Button>

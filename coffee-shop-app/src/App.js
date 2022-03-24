@@ -7,7 +7,7 @@ import Footer from './Components/Footer'
 //import screens
 import HomeScreen from './Screens/HomeScreen';
 import MenuScreen from './Screens/MenuScreen';
-import GalleryScreen from './Screens/MenuScreen';
+import GalleryScreen from './Screens/GalleryScreen';
 import HistoryScreen from './Screens/HistoryScreen';
 import ContactScreen from './Screens/ContactScreen';
 import ReviewsScreen from './Screens/ReviewsScreen';

@@ -27,9 +27,16 @@ function RegisterScreen() {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
+                if (data.message === 'Registration Successful! Please Login!')
+                {
+                    window.location.href = '/login'
+                } 
+                else
+                {
+                    alert("Error in reigstration")
+                }
             })
             .catch(err => console.log(err))
-
     }
 
     return (
