@@ -6,11 +6,12 @@ import MenuFoodImg from "../img/MenuFoodImg.png"
 
 function MenuScreen() {
 
-  const[error, setError] = useState(null);
-  const[products, setProducts] = useState('');
+  const[products, setProducts] = useState([]);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
+
+    console.log("Product Loaded")
     fetch('https://localhost:7123/api/products')
       .then(res => res.json())
       .then(
@@ -18,18 +19,10 @@ function MenuScreen() {
           setLoaded(true);
           setProducts(result);
         },
-        (error) => {
-          setLoaded(true);
-          setError(error);
-        }
       )
   }, [])
 
-  if(error)
-  {
-    return<div>Error: {error.message}</div>;
-  } 
-  else if (!loaded)
+  if (!loaded)
   {
     return <div>Loading...</div>;
   }
@@ -65,9 +58,9 @@ function MenuScreen() {
             <Row>
             <h4 className="text-center mt-4 mb-4">Coffee</h4>
 
-              <Row>
-                <Col>
-                {products.map(products => ( <button type="button" className="btn btn-outline-warning w-100" key={products.id}>
+              <Row className="text-center">
+                <Col className="text-center">
+                {products.map(products => ( <button type="button" className="btn btn-outline-warning w-100 m-1" key={products.id}>
                      <div>{products.name}</div>
                      £ {products.price}
                      </button>))}
