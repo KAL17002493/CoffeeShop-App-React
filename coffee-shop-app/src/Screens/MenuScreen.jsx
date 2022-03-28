@@ -7,7 +7,9 @@ import MenuFoodImg from "../img/MenuFoodImg.png"
 function MenuScreen() {
 
   const[products, setProducts] = useState([]);
-  const [loaded, setLoaded] = useState(false);
+  const[loaded, setLoaded] = useState(false);
+
+  const[query, setQuery] = useState('');
 
   useEffect(() => {
 
@@ -41,7 +43,7 @@ function MenuScreen() {
          </Container>
 
          <div className="form-outline text-center m-3 mt-5">
-          <input type="search" id="form1" className="form-control" placeholder="Search Item" aria-label="Search" />
+          <input type="search" id="form1" className="form-control" placeholder="Search Item" aria-label="Search"/>
           <div className="text-center mt-3">
             <Button as={Link} to="/" variant="success" className="w-100">Check out</Button>
           </div>

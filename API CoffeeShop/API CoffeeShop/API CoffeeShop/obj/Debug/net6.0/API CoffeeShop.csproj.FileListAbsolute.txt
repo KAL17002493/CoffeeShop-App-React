@@ -808,3 +808,23 @@ C:\R\CoffeeShop-App-React\API CoffeeShop\API CoffeeShop\API CoffeeShop\obj\Debug
 C:\R\CoffeeShop-App-React\API CoffeeShop\API CoffeeShop\API CoffeeShop\obj\Debug\net6.0\ref\API CoffeeShop.dll
 C:\R\CoffeeShop-App-React\API CoffeeShop\API CoffeeShop\API CoffeeShop\obj\Debug\net6.0\API CoffeeShop.pdb
 C:\R\CoffeeShop-App-React\API CoffeeShop\API CoffeeShop\API CoffeeShop\obj\Debug\net6.0\API CoffeeShop.genruntimeconfig.cache
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\ricar\Documents\School Stuff\Level 5\Web Development\Assignments\A2\React App\API CoffeeShop\API CoffeeShop\API CoffeeShop\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
