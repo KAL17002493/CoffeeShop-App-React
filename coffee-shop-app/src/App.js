@@ -15,6 +15,7 @@ import LoginScreen from './Screens/LoginScreen';
 import RegisterScreen from './Screens/RegisterScreen';
 
 import AccountScreen from './Screens/AccountScreen';
+import AdminScreen from './Screens/AdminScreen';
 
 //import routing for page navigation
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
@@ -39,6 +40,8 @@ function App() {
             <Route exact path="/register" element={<RegisterScreen/>}/>
 
             <Route exact path="/user/account" element={<AccountScreen/>}/>
+
+            <Route exact path="/user/admin" element={<AdminScreen/>}/>
           </Routes>
 
       </Router>

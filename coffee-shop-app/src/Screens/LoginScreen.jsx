@@ -25,12 +25,19 @@ function LoginScreen() {
             .then(data => {
                 console.log(data)
 
-              if (data.token) {
+              if (data.role == "admin") {
+                window.localStorage.setItem('token', data.token)
+                window.localStorage.setItem('name', data.firstName + ' ' + data.lastName)
+                window.localStorage.setItem('role', data.role)
+                window.location.href = '/user/admin'
+              } 
+              else if(data.token)
+              {
                 window.localStorage.setItem('token', data.token)
                 window.localStorage.setItem('name', data.firstName + ' ' + data.lastName)
                 window.localStorage.setItem('role', data.role)
                 window.location.href = '/user/account'
-              } 
+              }
               else
               {
                   alert("Error in login")

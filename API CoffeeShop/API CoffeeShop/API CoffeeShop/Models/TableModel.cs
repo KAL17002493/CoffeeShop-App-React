@@ -2,7 +2,7 @@
 
 namespace API_CoffeeShop.Models
 {
-    public class BookTableModel
+    public class TableModel
     {
         [Key]
         public int Id { get; set; }

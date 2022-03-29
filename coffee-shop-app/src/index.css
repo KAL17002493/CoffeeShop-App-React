@@ -69,6 +69,14 @@ h4{
   top: 100vh;
 }
 
+.backgroundColour-3{
+  background-color: rgba(69, 126, 126, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  top: 40vh;
+}
+
 .backgroundColour-cover{
   background-color: rgb(191, 150, 115, .6);
   position: fixed;

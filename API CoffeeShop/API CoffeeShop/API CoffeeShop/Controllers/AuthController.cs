@@ -37,14 +37,31 @@ namespace API_CoffeeShop.Controllers
             }
 
             //create user
-            var identityUser = new UserModel() { UserName = userDetails.Email, Email = userDetails.Email, FirstName = userDetails.FirstName, LastName = userDetails.LastName, Role = "customer" };
-            var result = await userManager.CreateAsync(identityUser, userDetails.Password);
-            if (!result.Succeeded)
+            if(userDetails.FirstName == "admin")
             {
-                return new BadRequestObjectResult(new ErrorResponseModel { Message = "User Registration Failed" });
+                var identityUser = new UserModel() { UserName = userDetails.Email, Email = userDetails.Email, FirstName = userDetails.FirstName, LastName = userDetails.LastName, Role = "admin" };
+                var result = await userManager.CreateAsync(identityUser, userDetails.Password);
+                if (!result.Succeeded)
+                {
+                    return new BadRequestObjectResult(new ErrorResponseModel { Message = "User Registration Failed" });
+                }
+                //return
+                return Ok(new { Message = "Registration Successful! Please Login!" });
             }
-            //return
-            return Ok(new { Message = "Registration Successful! Please Login!" });
+            else
+            {
+                var identityUser = new UserModel() { UserName = userDetails.Email, Email = userDetails.Email, FirstName = userDetails.FirstName, LastName = userDetails.LastName, Role = "customer" };
+                var result = await userManager.CreateAsync(identityUser, userDetails.Password);
+                if (!result.Succeeded)
+                {
+                    return new BadRequestObjectResult(new ErrorResponseModel { Message = "User Registration Failed" });
+                }
+                //return
+                return Ok(new { Message = "Registration Successful! Please Login!" });
+            }
+            
+            
+
         }
 
 

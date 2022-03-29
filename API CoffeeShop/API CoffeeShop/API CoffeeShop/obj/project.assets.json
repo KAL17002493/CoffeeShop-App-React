@@ -10273,20 +10273,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ricar\\.nuget\\packages\\": {}
+    "C:\\Users\\KAL17002493\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ricar\\Documents\\School Stuff\\Level 5\\Web Development\\Assignments\\A2\\React App\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
+      "projectUniqueName": "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
       "projectName": "API CoffeeShop",
-      "projectPath": "C:\\Users\\ricar\\Documents\\School Stuff\\Level 5\\Web Development\\Assignments\\A2\\React App\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
-      "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ricar\\Documents\\School Stuff\\Level 5\\Web Development\\Assignments\\A2\\React App\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\obj\\",
+      "projectPath": "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
+      "packagesPath": "C:\\Users\\KAL17002493\\.nuget\\packages\\",
+      "outputPath": "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ricar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\KAL17002493\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -10372,7 +10380,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
