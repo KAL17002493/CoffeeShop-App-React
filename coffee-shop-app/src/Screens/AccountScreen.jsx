@@ -9,7 +9,7 @@ function AccountScreen() {
             <h1 className='py-3 text-center'>Hello {window.localStorage.getItem("name")}</h1>
 
             <div className="text-center mt-5 mb-5">
-                <Button as={Link} to="/" variant="success" className="buttonWidth mt-3">Get a Reward--</Button>
+                <Button as={Link} to="/user/account/manage" variant="success" className="buttonWidth mt-3">Manage Account</Button>
                 <Button as={Link} to="/" variant="success" className="buttonWidth mt-3">Click and Collect</Button>
                 <Button as={Link} to="/" variant="success" className="buttonWidth mt-3">Leave a Review</Button>
             </div>

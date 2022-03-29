@@ -11,7 +11,7 @@ using API_CoffeeShop.Models;
 
 namespace API_CoffeeShop.Controllers
 {
-    [Route("api/orders")]
+    [Route("api/order")]
     [ApiController]
     public class OnlineOrderController : ControllerBase
     {
@@ -24,16 +24,16 @@ namespace API_CoffeeShop.Controllers
 
         // GET: api/OnlineOrder
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<OnlineOrderModel>>> GetOnlineOrderModel()
+        public async Task<ActionResult<IEnumerable<OnlineOrderModel>>> GetOrders()
         {
-            return await _context.OnlineOrderModel.ToListAsync();
+            return await _context.Orders.ToListAsync();
         }
 
         // GET: api/OnlineOrder/5
         [HttpGet("{id}")]
         public async Task<ActionResult<OnlineOrderModel>> GetOnlineOrderModel(int id)
         {
-            var onlineOrderModel = await _context.OnlineOrderModel.FindAsync(id);
+            var onlineOrderModel = await _context.Orders.FindAsync(id);
 
             if (onlineOrderModel == null)
             {
@@ -79,7 +79,7 @@ namespace API_CoffeeShop.Controllers
         [HttpPost]
         public async Task<ActionResult<OnlineOrderModel>> PostOnlineOrderModel(OnlineOrderModel onlineOrderModel)
         {
-            _context.OnlineOrderModel.Add(onlineOrderModel);
+            _context.Orders.Add(onlineOrderModel);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetOnlineOrderModel", new { id = onlineOrderModel.Id }, onlineOrderModel);
@@ -89,13 +89,13 @@ namespace API_CoffeeShop.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOnlineOrderModel(int id)
         {
-            var onlineOrderModel = await _context.OnlineOrderModel.FindAsync(id);
+            var onlineOrderModel = await _context.Orders.FindAsync(id);
             if (onlineOrderModel == null)
             {
                 return NotFound();
             }
 
-            _context.OnlineOrderModel.Remove(onlineOrderModel);
+            _context.Orders.Remove(onlineOrderModel);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -103,7 +103,7 @@ namespace API_CoffeeShop.Controllers
 
         private bool OnlineOrderModelExists(int id)
         {
-            return _context.OnlineOrderModel.Any(e => e.Id == id);
+            return _context.Orders.Any(e => e.Id == id);
         }
     }
 }

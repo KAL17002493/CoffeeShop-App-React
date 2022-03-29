@@ -1,19 +1,29 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_CoffeeShop.Models
 {
     public class OnlineOrderModel
     {
+        [Key]
         [Required]
         public int Id { get; set; }
 
-        [Required]
-        public string Name { get; set; }
+        //------
+        public string UserId { get; set; }
 
-        [Required]
-        public int Amount { get; set; }
+        [ForeignKey("UserId")]
+        public UserModel? User { get; set; }
 
-        [Required]
-        public double Price { get; set; }
+        //------
+        public int ProductId { get; set; }
+
+        [ForeignKey("ProductId")]
+        public ProductModel? Product { get; set; }
+
+        //------
+
+
+
     }
 }

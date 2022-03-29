@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj": {}
+    "C:\\CoffeShop app\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj": {}
   },
   "projects": {
-    "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj": {
+    "C:\\CoffeShop app\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
+        "projectUniqueName": "C:\\CoffeShop app\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
         "projectName": "API CoffeeShop",
-        "projectPath": "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
-        "packagesPath": "C:\\Users\\KAL17002493\\.nuget\\packages\\",
-        "outputPath": "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\obj\\",
+        "projectPath": "C:\\CoffeShop app\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
+        "packagesPath": "C:\\Users\\KAL17002493.CENTRAL\\.nuget\\packages\\",
+        "outputPath": "C:\\CoffeShop app\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\KAL17002493\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KAL17002493.CENTRAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"

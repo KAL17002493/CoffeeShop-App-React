@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { Container, Row, Col, Button} from 'react-bootstrap'
-import {Link } from "react-router-dom"
+import {Link} from "react-router-dom"
 import MenuDrinkImg from "../img/MenuDrinkImg.png"
 import MenuFoodImg from "../img/MenuFoodImg.png"
 
@@ -9,11 +9,8 @@ function MenuScreen() {
   const[products, setProducts] = useState([]);
   const[loaded, setLoaded] = useState(false);
 
-  const[query, setQuery] = useState('');
-
   useEffect(() => {
 
-    console.log("Product Loaded")
     fetch('https://localhost:7123/api/products')
       .then(res => res.json())
       .then(
@@ -26,7 +23,7 @@ function MenuScreen() {
 
   if (!loaded)
   {
-    return <div>Loading...</div>;
+    return <div><h2 className="text-center m-5">Loading...</h2></div>
   }
   else {
 
