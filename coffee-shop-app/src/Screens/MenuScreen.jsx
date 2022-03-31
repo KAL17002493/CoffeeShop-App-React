@@ -1,8 +1,21 @@
 import React, {useEffect, useState} from 'react'
 import { Container, Row, Col, Button} from 'react-bootstrap'
 import {Link} from "react-router-dom"
-import MenuDrinkImg from "../img/MenuDrinkImg.png"
-import MenuFoodImg from "../img/MenuFoodImg.png"
+import MenuDrinkImg from "../img/coffee-cup (1).png"
+import MenuFoodImg from "../img/cupcake.png"
+
+function addToBasket(id, name)
+{
+  var products = JSON.parse(window.localStorage.getItem("products"))
+  if(!products)
+  {
+    products = []
+  }
+  products.push(id)
+  window.localStorage.setItem("products", JSON.stringify(products))
+
+  console.log(id + " " + name)
+}
 
 function MenuScreen() {
 
@@ -34,15 +47,15 @@ function MenuScreen() {
 
         <Container>
             <Row className="mt-5">
-                <Col><div className="menuItem text-center"><h6>Drinks</h6><img className="mt-1" src={MenuDrinkImg} alt="MenuDrinkImg" width={80}/></div></Col>
-                <Col><div className="menuItem text-center"><h6>Food</h6><img className="mt-1" src={MenuFoodImg} alt="MenuFoodImg" width={80}/></div></Col>
+                <Col className="text-center"><div className="btn btn-warning"><h6>Drinks</h6><img className=" mt-1" src={MenuDrinkImg} alt="MenuDrinkImg" width={80}/></div></Col>
+                <Col className="text-center"><div className="btn btn-warning"><h6>Food</h6><img className="mt-1" src={MenuFoodImg} alt="MenuFoodImg" width={80}/></div></Col>
             </Row>
          </Container>
 
          <div className="form-outline text-center m-3 mt-5">
           <input type="search" id="form1" className="form-control" placeholder="Search Item" aria-label="Search"/>
           <div className="text-center mt-3">
-            <Button as={Link} to="/" variant="success" className="w-100">Check out</Button>
+            <Button as={Link} to="/checkOut" variant="success" className="w-100">Check out</Button>
           </div>
         </div>
          
@@ -57,15 +70,14 @@ function MenuScreen() {
             <Row>
             <h4 className="text-center mt-4 mb-4">Coffee</h4>
 
-              <Row className="text-center">
+              <Row>
                 <Col className="text-center">
-                {products.map(products => ( <button type="button" className="btn btn-outline-warning w-100 m-1" key={products.id}>
+                {products.map(products => ( <Button variant="outline-warning" type="button" className="btn btn-outline-warning w-100 m-1" onClick={ e => addToBasket (products.id, products.name)} key={products.id}>
                      <div>{products.name}</div>
                      £ {products.price}
-                     </button>))}
+                     </Button>))}
                 </Col>
               </Row>
-              
             </Row>
                 
             </Container>

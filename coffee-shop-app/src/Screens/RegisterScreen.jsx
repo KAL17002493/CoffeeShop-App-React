@@ -46,7 +46,7 @@ function RegisterScreen() {
         <h1 className='py-3 text-center'></h1>
     
         <FormContainer>
-            <Form>
+            <Form className="mt-5">
                 <Form.Group className='mb-3' controlId='fname'>
                     <Form.Label className="text-light">First Name</Form.Label>
                     <Form.Control type='string' placeholder='First Name...' onChange={(e)=>SetFirstName(e.target.value)} />

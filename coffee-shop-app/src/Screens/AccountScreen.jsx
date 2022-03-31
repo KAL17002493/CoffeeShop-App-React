@@ -15,7 +15,7 @@ function AccountScreen() {
             </div>
 
             <div className="fixed-bottom text-center mb-5">
-                <Button as={Link} to="/home" variant="info" className="btn btn-sm px-5">Logout</Button>
+                <Button href="/login" variant="info" className="btn btn-sm px-5">Logout</Button>
             </div>
         </div>
     </div>

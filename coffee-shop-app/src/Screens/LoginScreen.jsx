@@ -25,7 +25,7 @@ function LoginScreen() {
             .then(data => {
                 console.log(data)
 
-              if (data.role == "admin") {
+              if (data.role === "admin") {
                 window.localStorage.setItem('token', data.token)
                 window.localStorage.setItem('name', data.firstName + ' ' + data.lastName)
                 window.localStorage.setItem('role', data.role)
@@ -36,6 +36,7 @@ function LoginScreen() {
                 window.localStorage.setItem('token', data.token)
                 window.localStorage.setItem('name', data.firstName + ' ' + data.lastName)
                 window.localStorage.setItem('role', data.role)
+                window.localStorage.setItem('email', data.email)
                 window.location.href = '/user/account'
               }
               else

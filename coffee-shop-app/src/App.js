@@ -13,6 +13,7 @@ import ContactScreen from './Screens/ContactScreen';
 import ReviewsScreen from './Screens/ReviewsScreen';
 import LoginScreen from './Screens/LoginScreen';
 import RegisterScreen from './Screens/RegisterScreen';
+import OrderScreen from './Screens/OrderScreen';
 
 import AccountScreen from './Screens/AccountScreen';
 import ManageAccount from './Screens/ManageAccount';
@@ -40,6 +41,7 @@ function App() {
             <Route exact path="/reviews" element={<ReviewsScreen/>}/>
             <Route exact path="/login" element={<LoginScreen/>}/>
             <Route exact path="/register" element={<RegisterScreen/>}/>
+            <Route exact path="/checkOut" element={<OrderScreen/>}/>
 
             <Route exact path="/user/account" element={<AccountScreen/>}/>
             <Route exact path="/user/account/manage" element={<ManageAccount/>}/>
