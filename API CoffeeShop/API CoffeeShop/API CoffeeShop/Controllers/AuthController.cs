@@ -1,7 +1,9 @@
 ﻿using API_CoffeeShop.Classes;
+using API_CoffeeShop.Data;
 using API_CoffeeShop.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -16,14 +18,16 @@ namespace API_CoffeeShop.Controllers
         //bring in identity user management
         private readonly SignInManager<UserModel> signInmanager;
         private readonly UserManager<IdentityUser> userManager;
+        private readonly ApplicationDbContext _context;
 
         //bring in token settings
         private readonly JwtBearerTokenSettings jwtBearerTokenSettings;
 
-        public AuthController(IOptions<JwtBearerTokenSettings> jwtTokenOptions, UserManager<IdentityUser> userManager)
+        public AuthController(IOptions<JwtBearerTokenSettings> jwtTokenOptions, UserManager<IdentityUser> userManager, ApplicationDbContext context)
         {
             this.jwtBearerTokenSettings = jwtTokenOptions.Value;
             this.userManager = userManager;
+            _context = context;
         }
 
         [HttpPost]
@@ -37,7 +41,7 @@ namespace API_CoffeeShop.Controllers
             }
 
             //create user
-            if(userDetails.FirstName == "admin")
+            if (userDetails.FirstName == "admin")
             {
                 var identityUser = new UserModel() { UserName = userDetails.Email, Email = userDetails.Email, FirstName = userDetails.FirstName, LastName = userDetails.LastName, Role = "admin" };
                 var result = await userManager.CreateAsync(identityUser, userDetails.Password);
@@ -59,10 +63,33 @@ namespace API_CoffeeShop.Controllers
                 //return
                 return Ok(new { Message = "Registration Successful! Please Login!" });
             }
-            
-            
+
+
 
         }
+
+        //###############################################################################################################################################
+        //###############################################################################################################################################
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<UserModel>>> GetUsers()
+        {
+            return await _context.Users.ToListAsync();
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public async Task<ActionResult<UserModel>> GetUsersModel(Guid id)
+        {
+            var userModel = await _context.Users.FindAsync(id);
+ 
+            if (userModel == null)
+            {
+                return NotFound();
+            }
+            return userModel;
+        }
+        //###############################################################################################################################################
+        //###############################################################################################################################################
 
 
         [HttpPost]
@@ -99,6 +126,8 @@ namespace API_CoffeeShop.Controllers
             return new BadRequestObjectResult(new ErrorResponseModel { Message = "Invalid email or password!" });
 
         }
+
+
 
 
 
