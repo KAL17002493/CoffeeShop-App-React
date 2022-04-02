@@ -19,6 +19,8 @@ import ManageAccount from './Screens/ManageAccount';
 
 import AdminScreen from './Screens/AdminScreen';
 import ViewUsersScreen from './Screens/ViewUsersScreen';
+import ViewProductsScreen from './Screens/ViewProductsScreen';
+import AddProductScreen from './Screens/AddProductScreen';
 
 //import routing for page navigation
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
@@ -48,6 +50,9 @@ function App() {
 
             <Route exact path="/user/admin" element={<AdminScreen/>}/>
             <Route exact path="/user/admin/viewUsers" element={<ViewUsersScreen/>}/>
+            <Route exact path="/user/admin/viewProducts" element={<ViewProductsScreen/>}/>
+            <Route exact path="/user/admin/viewProducts/addProduct" element={<AddProductScreen/>}/>
+
           </Routes>
 
       </Router>

@@ -10,7 +10,7 @@ function AdminScreen() {
 
             <Button as={Link} to="/user/admin/viewUsers" variant="secondary" className="buttonWidth m-2">View Users</Button>
             <Button as={Link} to="/" variant="secondary" className="buttonWidth m-2">View Orders</Button>
-            <Button as={Link} to="/" variant="secondary" className="buttonWidth m-2">View Bookings</Button>
+            <Button as={Link} to="/user/admin/viewProducts" variant="secondary" className="buttonWidth m-2">View Products</Button>
 
         </div>
     </div>
