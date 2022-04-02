@@ -19,6 +19,8 @@ function addToBasket(id, name)
 
 function MenuScreen() {
 
+  const [searchTerm, setSearchTerm] = useState('')
+
   const[products, setProducts] = useState([]);
   const[loaded, setLoaded] = useState(false);
 
@@ -53,7 +55,7 @@ function MenuScreen() {
          </Container>
 
          <div className="form-outline text-center m-3 mt-5">
-          <input type="search" id="form1" className="form-control" placeholder="Search Item" aria-label="Search"/>
+          <input type="search" id="form1" className="form-control" placeholder="Search Item" aria-label="Search" onChange={event => {setSearchTerm(event.target.value);}}/>
           <div className="text-center mt-3">
             <Button as={Link} to="/checkOut" variant="success" className="w-100">Check out</Button>
           </div>
@@ -72,7 +74,16 @@ function MenuScreen() {
 
               <Row>
                 <Col className="text-center">
-                {products.map(products => ( <Button variant="outline-warning" type="button" className="btn btn-outline-warning w-100 m-1" onClick={ e => addToBasket (products.id, products.name)} key={products.id}>
+                {products.filter((products) => {
+                if (searchTerm == "") 
+                {
+                  return products
+                }
+                else if (products.name.toLowerCase().includes(searchTerm.toLowerCase()))
+                {
+                  return products
+                }
+                }).map(products => ( <Button variant="outline-warning" type="button" className="btn btn-outline-warning w-100 m-1" onClick={ e => addToBasket (products.id, products.name)} key={products.id}>
                      <div>{products.name}</div>
                      £ {products.price}
                      </Button>))}

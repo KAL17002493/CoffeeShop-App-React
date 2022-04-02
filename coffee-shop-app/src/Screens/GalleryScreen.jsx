@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 
 function GalleryScreen() {
   return (
-    <div>GalleryScreen</div>
+    <div>
+      
+    </div>
   )
 }
 
