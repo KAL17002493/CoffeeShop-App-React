@@ -2,7 +2,6 @@ import './App.css';
 
 //import components
 import Header from './Components/Header'
-import Footer from './Components/Footer'
 
 //import screens
 import HomeScreen from './Screens/HomeScreen';
@@ -19,6 +18,7 @@ import AccountScreen from './Screens/AccountScreen';
 import ManageAccount from './Screens/ManageAccount';
 
 import AdminScreen from './Screens/AdminScreen';
+import ViewUsersScreen from './Screens/ViewUsersScreen';
 
 //import routing for page navigation
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
@@ -47,6 +47,7 @@ function App() {
             <Route exact path="/user/account/manage" element={<ManageAccount/>}/>
 
             <Route exact path="/user/admin" element={<AdminScreen/>}/>
+            <Route exact path="/user/admin/viewUsers" element={<ViewUsersScreen/>}/>
           </Routes>
 
       </Router>

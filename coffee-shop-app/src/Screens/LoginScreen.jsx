@@ -27,14 +27,16 @@ function LoginScreen() {
 
               if (data.role === "admin") {
                 window.localStorage.setItem('token', data.token)
-                window.localStorage.setItem('name', data.firstName + ' ' + data.lastName)
+                window.localStorage.setItem('firstName', data.firstName)
+                window.localStorage.setItem('lastName', data.lastName)
                 window.localStorage.setItem('role', data.role)
                 window.location.href = '/user/admin'
               } 
               else if(data.token)
               {
                 window.localStorage.setItem('token', data.token)
-                window.localStorage.setItem('name', data.firstName + ' ' + data.lastName)
+                window.localStorage.setItem('firstName', data.firstName)
+                window.localStorage.setItem('lastName', data.lastName)
                 window.localStorage.setItem('role', data.role)
                 window.localStorage.setItem('email', data.email)
                 window.location.href = '/user/account'

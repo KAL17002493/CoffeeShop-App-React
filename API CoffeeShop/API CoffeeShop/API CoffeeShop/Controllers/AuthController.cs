@@ -100,6 +100,8 @@ namespace API_CoffeeShop.Controllers
 
         }
 
+
+
         private object GenerateToken(IdentityUser identityUser)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
