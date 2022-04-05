@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar, Container, Nav, Offcanvas} from 'react-bootstrap'
+import {Navbar, Container, Nav} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 
 function Header() {
@@ -17,7 +17,6 @@ function Header() {
           <Nav.Link as={Link} to="/gallery">Gallery</Nav.Link>
           <Nav.Link as={Link} to="/history">History</Nav.Link>
           <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-          <Nav.Link as={Link} to="/reviews">Reviews</Nav.Link>
           <Nav.Link as={Link} to="/login">Login</Nav.Link>
     </Nav>
   </Navbar.Collapse>

@@ -11,10 +11,11 @@ namespace API_CoffeeShop.Models
         [MaxLength(50)]
         public string Name { get; set; }
 
-        [Required]
         public string Description { get; set; }
 
         [Required]
         public double Price { get; set; }
+
+        public string Image { get; set; }
     }
 }

@@ -9,7 +9,6 @@ import MenuScreen from './Screens/MenuScreen';
 import GalleryScreen from './Screens/GalleryScreen';
 import HistoryScreen from './Screens/HistoryScreen';
 import ContactScreen from './Screens/ContactScreen';
-import ReviewsScreen from './Screens/ReviewsScreen';
 import LoginScreen from './Screens/LoginScreen';
 import RegisterScreen from './Screens/RegisterScreen';
 import OrderScreen from './Screens/OrderScreen';
@@ -40,7 +39,6 @@ function App() {
             <Route exact path="/gallery" element={<GalleryScreen/>}/>
             <Route exact path="/history" element={<HistoryScreen/>}/>
             <Route exact path="/contact" element={<ContactScreen/>}/>
-            <Route exact path="/reviews" element={<ReviewsScreen/>}/>
             <Route exact path="/login" element={<LoginScreen/>}/>
             <Route exact path="/register" element={<RegisterScreen/>}/>
             <Route exact path="/checkOut" element={<OrderScreen/>}/>

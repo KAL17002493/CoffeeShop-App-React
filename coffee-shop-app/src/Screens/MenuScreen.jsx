@@ -83,7 +83,7 @@ function MenuScreen() {
                 {
                   return products
                 }
-                }).map(products => ( <Button variant="outline-warning" type="button" className="btn btn-outline-warning w-100 m-1" onClick={ e => addToBasket (products.id, products.name)} key={products.id}>
+                }).map(products => ( <Button variant="outline-warning" type="button" className="btn btn-outline-warning w-100 m-1 text-center" onClick={ e => addToBasket (products.id, products.name)} key={products.id}>
                      <div>{products.name}</div>
                      £ {products.price}
                      </Button>))}
