@@ -10,7 +10,7 @@
         "projectUniqueName": "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
         "projectName": "API CoffeeShop",
         "projectPath": "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
-        "packagesPath": "C:\\Users\\KAL17002493.CENTRAL\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\KAL17002493.CENTRAL.000\\.nuget\\packages\\",
         "outputPath": "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
@@ -18,7 +18,7 @@
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\KAL17002493.CENTRAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KAL17002493.CENTRAL.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
