@@ -24,6 +24,18 @@ function MenuScreen() {
   const[products, setProducts] = useState([]);
   const[loaded, setLoaded] = useState(false);
 
+  const [count, setCount] = useState(0);
+
+  useEffect(() => 
+  {
+  var products = JSON.parse(window.localStorage.getItem("products"))
+  if(!products)
+  {
+    products = []
+  }
+  setCount(products.length)
+  },[])
+
   useEffect(() => {
 
     fetch('https://localhost:7123/api/products')
@@ -57,7 +69,7 @@ function MenuScreen() {
          <div className="form-outline text-center m-3 mt-5">
           <input type="search" id="form1" className="form-control" placeholder="Search Item" aria-label="Search" onChange={event => {setSearchTerm(event.target.value);}}/>
           <div className="text-center mt-3">
-            <Button as={Link} to="/checkOut" variant="success" className="w-100">Check out</Button>
+            <Button as={Link} to="/checkOut" variant="success" className="w-100">Check out <b>{count}</b></Button>
           </div>
         </div>
          

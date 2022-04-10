@@ -29,24 +29,6 @@ namespace API_CoffeeShop.Controllers
             return await _context.Products.ToListAsync();
         }
 
-        [Route("cart")]
-        [HttpPost]
-        public async Task<ActionResult<IEnumerable<ProductModel>>> GetProducts(int[] products)
-        {
-            List<ProductModel> prods = new List<ProductModel>();
-
-            foreach(var id in products)
-            {
-                var productModel = await _context.Products.FindAsync(id);
-
-                if(productModel != null)
-                {
-                    prods.Add(productModel);
-                }
-            }
-            return prods;
-        }
-
         // GET: api/Product/5
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductModel>> GetProductModel(int id)
@@ -59,6 +41,24 @@ namespace API_CoffeeShop.Controllers
             }
 
             return productModel;
+        }
+
+        [Route("cart")]
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<ProductModel>>> GetProducts(int[] products)
+        {
+            List<ProductModel> prods = new List<ProductModel>();
+
+            foreach (var id in products)
+            {
+                var productModel = await _context.Products.FindAsync(id);
+
+                if (productModel != null)
+                {
+                    prods.Add(productModel);
+                }
+            }
+            return prods;
         }
 
         // PUT: api/Product/5

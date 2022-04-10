@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj": {}
+    "C:\\Users\\ricar\\Documents\\School Stuff\\Level 5\\Web Development\\Assignments\\A2\\React App\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj": {}
   },
   "projects": {
-    "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj": {
+    "C:\\Users\\ricar\\Documents\\School Stuff\\Level 5\\Web Development\\Assignments\\A2\\React App\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
+        "projectUniqueName": "C:\\Users\\ricar\\Documents\\School Stuff\\Level 5\\Web Development\\Assignments\\A2\\React App\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
         "projectName": "API CoffeeShop",
-        "projectPath": "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
-        "packagesPath": "C:\\Users\\KAL17002493.CENTRAL.000\\.nuget\\packages\\",
-        "outputPath": "C:\\CoffeeShop\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\obj\\",
+        "projectPath": "C:\\Users\\ricar\\Documents\\School Stuff\\Level 5\\Web Development\\Assignments\\A2\\React App\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop.csproj",
+        "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ricar\\Documents\\School Stuff\\Level 5\\Web Development\\Assignments\\A2\\React App\\CoffeeShop-App-React\\API CoffeeShop\\API CoffeeShop\\API CoffeeShop\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\KAL17002493.CENTRAL.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\ricar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -107,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,20 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import {Button, Container, Row, Col} from 'react-bootstrap'
+import {Button, Container, Row, Col, ListGroup} from 'react-bootstrap'
 
 function OrderScreen() {
 
-    const [count, setCount] = useState(0);
+
     const [prods, setProducts] = useState([]);
 
-    useEffect(() => 
-    {
-    var products = JSON.parse(window.localStorage.getItem("products"))
-    if(!products)
-    {
-      products = []
-    }
-    setCount(products.length)
-    },[])
+
 
     useEffect(() =>{
     var products = JSON.parse(window.localStorage.getItem("products"))
@@ -41,12 +33,17 @@ function OrderScreen() {
         <div>
           <Container className="text-center">
           <Row className="px-3 mt-2">
-            <Button  variant="success" className="w-100">Order <b>{count}</b></Button>
+            <Button  variant="success" className="w-100">Order</Button>
           </Row>
-        {prods.map(prods => ( <Button variant="outline-warning" type="button" className="btn btn-outline-warning w-100 m-1 text-center">
-                     <div>{prods.name}</div>
-                     £ {prods.price}
-                     </Button>))}
+        {prods.map(prods => ( <div key={prods.id} className="m- text-center">
+          <ListGroup as="ul" className="m-2">
+          <ListGroup.Item as="li">
+                     <div>{prods.name} x </div>
+                     <div></div>
+                     
+          </ListGroup.Item>
+          </ListGroup>
+                     </div>))}
           </Container>          
           </div>
         </div>
