@@ -1,6 +1,7 @@
 import React from 'react'
 import {Form, Button} from 'react-bootstrap'
 
+//Pure HTML with a submit button at the bottom wich currently does nothing
 function ContactScreen() {
   return (
     <div className="bg-banner">

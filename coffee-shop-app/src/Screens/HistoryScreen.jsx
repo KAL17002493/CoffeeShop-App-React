@@ -5,6 +5,7 @@ import Building2 from '../img/Building2.png'
 import Building3 from '../img/Building3.png'
 import Building4 from '../img/Building4.png'
 
+//Pure HTML with few images importend from img folder located in source
 function HistoryScreen() {
   return (
 

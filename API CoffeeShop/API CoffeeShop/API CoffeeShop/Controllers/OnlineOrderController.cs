@@ -11,7 +11,7 @@ using API_CoffeeShop.Models;
 
 namespace API_CoffeeShop.Controllers
 {
-    [Route("api/order")]
+    [Route("api/OnlineOrder")]
     [ApiController]
     public class OnlineOrderController : ControllerBase
     {

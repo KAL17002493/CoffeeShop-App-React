@@ -2,6 +2,7 @@ import React from 'react';
 import CoffeeCup from '../img/CoffeeCup.png';
 import Award from '../img/Award.png'
 
+//Pure HTML with images imported from src
 function HomeScreen() {
   return (
 

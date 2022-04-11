@@ -9,21 +9,15 @@ namespace API_CoffeeShop.Models
         [Required]
         public int Id { get; set; }
 
-        //------
+        //=======
         public string UserId { get; set; }
-
         [ForeignKey("UserId")]
         public UserModel? User { get; set; }
-
-        //------
+        //=======
         public int ProductId { get; set; }
-
         [ForeignKey("ProductId")]
         public ProductModel? Product { get; set; }
-
-        //------
-
-
+        //=======
 
     }
 }

@@ -4,6 +4,7 @@ import {Form, Button} from 'react-bootstrap'
 
 function RegisterScreen() {
 
+    //Creates useState variables
     const [sname, SetLastName] = useState('')
     const [fname, SetFirstName] = useState('')
     const [email, SetEmail] = useState('')
@@ -12,7 +13,7 @@ function RegisterScreen() {
     const registerUser = async () =>
     {
         console.log('Button Clicked')
-
+        //Sends user info to database via API
         fetch('https://localhost:7123/api/auth/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
@@ -27,10 +28,12 @@ function RegisterScreen() {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
+                //Returns if all requirements were met when trying to register
                 if (data.message === 'Registration Successful! Please Login!')
                 {
                     window.location.href = '/login'
                 } 
+                //not all requirements were met
                 else
                 {
                     alert("Error in reigstration")
@@ -66,7 +69,7 @@ function RegisterScreen() {
                     <Form.Label className="text-light">Password</Form.Label>
                     <Form.Control type='password' placeholder='Password...' onChange={(e)=>SetPassword(e.target.value)} />
                 </Form.Group>
-
+                {/*Executes register with infromation entered in all form boxes*/}
                 <Button variant="success" className='w-100 mt-3' onClick={registerUser}>Sign Up</Button>
             </Form>
         </FormContainer>

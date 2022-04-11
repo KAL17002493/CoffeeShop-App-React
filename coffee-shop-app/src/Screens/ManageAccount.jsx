@@ -3,6 +3,7 @@ import {Form, Button} from 'react-bootstrap'
 
 function ManageAccount() {
 
+  //Bootstrap form with placeholder information populated by local storage information
   return (
     <div className="bg-bannerSmall">
         <div className="backgroundColour-cover text-center">
@@ -30,12 +31,3 @@ function ManageAccount() {
 }
 
 export default ManageAccount
-
-/*
-order number
-list of products
-
-controller
-
-.include
-*/

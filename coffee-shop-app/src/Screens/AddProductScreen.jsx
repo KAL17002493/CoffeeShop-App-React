@@ -5,13 +5,16 @@ import FormContainer from '../Components/FormContainer'
 //Admin123!
 function AddProductScreen() {
 
+  //Specifies what is needed for new product creation
   const [name, SetName] = useState('')
   const [price, SetPrice] = useState(0)
   const [image, SetImage] = useState('')
   const [description, SetDescription] = useState('')
 
+  //Creats new product
   const createProduct = async () =>
   {
+    //Turns image fail in base64
     var file = document.getElementById("image")['files'][0]
 
     var reader = new FileReader()
@@ -21,6 +24,7 @@ function AddProductScreen() {
     reader.readAsDataURL(file)
 
     console.log(image)
+    //Specifies where to send the JSON data
     await fetch('https://localhost:7123/api/products', 
     {
         method: 'POST',
@@ -50,21 +54,25 @@ function AddProductScreen() {
 
       <FormContainer>
           <Form id="upload">
+            {/*Set product name*/}
             <Form.Group className='mt-5 mb-1' controlId='name'>
             <Form.Label className="text-light">Product Name</Form.Label>
             <Form.Control type='string' placeholder='Product name...' onChange={(e)=>SetName(e.target.value)}/>
             </Form.Group>
 
+            {/*Set product price*/}
             <Form.Group className='mb-1' controlId='price'>
             <Form.Label className="text-light">Price</Form.Label>
             <Form.Control type='price' placeholder='£3.10...' onChange={(e)=>SetPrice(e.target.value)}/>
             </Form.Group>
 
+            {/*Set product image*/}
             <Form.Group className='mb-1' controlId='image'>
             <Form.Label className="text-light">Image</Form.Label>
             <Form.Control type='file' placeholder='Path...'/>
             </Form.Group>
 
+            {/*Exacutes createProduct fnction*/}
             <Button variant="success" className='w-100 mt-3' onClick={createProduct}>Add</Button>
             </Form>
           </FormContainer>

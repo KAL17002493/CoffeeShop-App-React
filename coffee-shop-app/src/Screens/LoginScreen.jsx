@@ -8,6 +8,7 @@ function LoginScreen() {
     const [email, SetEmail] = useState('')
     const [password, SetPassword] = useState('')
 
+    //Sends information to API login
     const login = async () =>
     {
         console.log('Button Clicked')
@@ -24,7 +25,7 @@ function LoginScreen() {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
-
+              //If login succeeds saves this data in local storage
               if (data.role === "admin") {
                 window.localStorage.setItem('token', data.token)
                 window.localStorage.setItem('firstName', data.firstName)
@@ -56,16 +57,17 @@ return (
 
         <FormContainer>
           <Form>
+            {/*Set Email*/}
             <Form.Group className='mt-5 mb-3' controlId='email'>
             <Form.Label className="text-light">Email</Form.Label>
             <Form.Control type='email' placeholder='Email...' onChange={(e)=>SetEmail(e.target.value)}/>
             </Form.Group>
-
+            {/*Set Password*/}
             <Form.Group className='mb-3' controlId='password'>
             <Form.Label className="text-light">Password</Form.Label>
             <Form.Control type='password' placeholder='Password...' onChange={(e)=>SetPassword(e.target.value)}/>
             </Form.Group>
-
+            {/*Executes login*/}
             <Button variant="success" className='w-100 mt-3' onClick={login}>Login</Button>
 
             </Form>

@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom'
 
 function Header() {
 
+  //Navbar and all it's options
   return (
     <div>
-
 <Navbar collapseOnSelect expand="lg" fixed="top" bg="dark" variant="dark">
   <Container>
   <Navbar.Brand as={Link} to="/home">The Cloakroom</Navbar.Brand>

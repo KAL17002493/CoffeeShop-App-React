@@ -4,6 +4,7 @@ import {Link} from "react-router-dom"
 import MenuDrinkImg from "../img/coffee-cup (1).png"
 import MenuFoodImg from "../img/cupcake.png"
 
+//Saves selected item to an arry in local storage by id and name
 function addToBasket(id, name)
 {
   var products = JSON.parse(window.localStorage.getItem("products"))
@@ -17,6 +18,7 @@ function addToBasket(id, name)
   console.log(id + " " + name)
 }
 
+//Retrives all itmes from api/products
 function MenuScreen() {
 
   const [searchTerm, setSearchTerm] = useState('')
@@ -26,6 +28,7 @@ function MenuScreen() {
 
   const [count, setCount] = useState(0);
 
+  //Counts the number of products in local storage arrey
   useEffect(() => 
   {
   var products = JSON.parse(window.localStorage.getItem("products"))
@@ -36,6 +39,7 @@ function MenuScreen() {
   setCount(products.length)
   },[])
 
+  //Fethes all products from database and out if API is up else shows message saying "Loading..."
   useEffect(() => {
 
     fetch('https://localhost:7123/api/products')
@@ -69,7 +73,8 @@ function MenuScreen() {
          <div className="form-outline text-center m-3 mt-5">
           <input type="search" id="form1" className="form-control" placeholder="Search Item" aria-label="Search" onChange={event => {setSearchTerm(event.target.value);}}/>
           <div className="text-center mt-3">
-            <Button as={Link} to="/checkOut" variant="success" className="w-100">Check out <b>{count}</b></Button>
+            {/*Takes user to checkout and displays how many items in basket*/}
+            <Button as={Link} to="/checkOut" variant="success" className="w-100">Checkout <b>{count}</b></Button>
           </div>
         </div>
          
@@ -86,6 +91,7 @@ function MenuScreen() {
 
               <Row>
                 <Col className="text-center">
+                  {/*Displasy all items retieved from the database my API if searchterm is null else whatever is eaqul to seach term*/}
                 {products.filter((products) => {
                 if (searchTerm == "") 
                 {

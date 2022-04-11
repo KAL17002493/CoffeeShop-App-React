@@ -24,15 +24,16 @@ import AddProductScreen from './Screens/AddProductScreen';
 //import routing for page navigation
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
-
 function App() {
   return (
     <div>
 
       <Router>
+        {/*Adds navbar to all pages*/}
         <Header/>
           <Routes>
-
+            
+            {/*Specify all routs by saying what the path is and to what page the user will be taken */}
             <Route exact path="/home" element={<HomeScreen/>}/>
             <Route exact path="/menu" element={<MenuScreen/>}/>
 

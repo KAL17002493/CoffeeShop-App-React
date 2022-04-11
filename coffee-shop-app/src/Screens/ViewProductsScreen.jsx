@@ -7,7 +7,7 @@ function ViewProductsScreen() {
     const[loaded, setLoaded] = useState(false);
   
     useEffect(() => {
-  
+      //Gets all products from database
       fetch('https://localhost:7123/api/products')
         .then(res => res.json())
         .then(
@@ -17,11 +17,13 @@ function ViewProductsScreen() {
           },
         )
     }, [])
-  
+    
+    //if failed to fetch data shows Loading...
     if (!loaded)
     {
       return <div><h2 className="text-center m-5">Loading...</h2></div>
     }
+    //Return screen if data fetches successfullt
     else {
   
     return (
@@ -36,6 +38,7 @@ function ViewProductsScreen() {
               <div key={products.id}>
           <ListGroup as="ul" className="m-2 px-2">
             <ListGroup.Item as="li" active>
+              {/*Outputs all products and their prices */}
             <div>
               {products.name}
             </div>
